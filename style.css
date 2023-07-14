@@ -169,4 +169,13 @@ footer div a img {
     flex-direction: row;
     justify-content: space-around;
   }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  li {
+    width: 25vw;
+  }
 }
