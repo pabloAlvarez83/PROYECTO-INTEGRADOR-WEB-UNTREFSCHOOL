@@ -1,0 +1,137 @@
+a {
+    text-decoration: none;
+    color: var(--color-qto);
+    display: inline-block;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding-inline-start: 0;
+  }
+  /*Mobile first*/
+  
+  body {
+    width: 320px;
+    margin: 0;
+    margin: 0;
+    background-color: var(--color-qto);
+  }
+  
+  /* header */
+  nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  li {
+    display: block;
+    background-color: var(--color-tro);
+    text-align: center;
+    padding: 0.2em 0;
+    width: 100vw;
+  }
+  
+  .titulo {
+    background-image: url(img/header-fondo-cel.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+  }
+  
+  h1 {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color: var(--color-qto);
+    text-shadow: 1px 1px 2px var(--color-cto);
+    margin: 0;
+    font-size: 1em;
+  }
+  /* main */
+  
+  section {
+    margin-bottom: 4em;
+  }
+  
+  h2,
+  h3 {
+    color: var(--color-pro);
+    text-shadow: 1px 1px var(--color-cto);
+    padding: 0 0.5em;
+  }
+  
+  .img-izq {
+    height: 100px;
+    float: left;
+    margin: 0 0.5em;
+  }
+  
+  .img-der {
+    height: 100px;
+    float: right;
+    margin: 0 0.5em;
+  }
+  
+  p {
+    padding: 0 0.5em;
+    color: var(--color-cto);
+  }
+  
+  .flex-centro {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .imagen-propuesta {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+  .txt-propuesta {
+    text-align: center;
+  }
+  
+  .flex-noticias {
+    display: flex;
+  }
+  
+  .noticia {
+    width: 50%;
+  }
+  
+  /* footer */
+  
+  footer {
+    background-color: var(--color-sdo);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  footer div a {
+    font-size: 10px;
+    margin: 5px 0;
+  }
+  
+  footer div a img {
+    margin-right: 3px;
+  }
+  
+  .redes,
+  .contacto {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .icono {
+    width: 20px;
+    vertical-align: middle;
+  }
+  
