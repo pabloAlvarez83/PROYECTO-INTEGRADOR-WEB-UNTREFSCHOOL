@@ -105,6 +105,14 @@ p {
   text-align: center;
 }
 
+.img-txt-propuesta {
+  display: grid;
+}
+
+.imagen-propuesta {
+  justify-self: center;
+}
+
 .flex-noticias {
   display: flex;
 }
@@ -146,4 +154,19 @@ footer div a img {
 .icono {
   width: 20px;
   vertical-align: middle;
+}
+
+@media screen and (min-width: 321px) {
+  body {
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .flex-centro {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
