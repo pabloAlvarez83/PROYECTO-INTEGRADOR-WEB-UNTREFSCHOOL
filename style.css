@@ -40,10 +40,19 @@ li {
   width: 100vw;
 }
 
+nav ul li {
+  transition: 1s;
+}
+
+nav ul li:hover {
+  background-color: var(--color-sdo);
+  transition: 1s;
+}
+
 .titulo {
   background-image: url(img/header-fondo-cel.jpg);
   background-size: cover;
-  background-position: center;
+  background-position-y: 35%;
   height: 100px;
 }
 
@@ -62,6 +71,14 @@ h1 {
 
 section {
   margin-bottom: 4em;
+}
+
+.subir {
+  color: var(--color-cto);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-right: 1em;
 }
 
 h2,
@@ -95,22 +112,28 @@ p {
   align-items: center;
 }
 
-.imagen-propuesta {
+.img-propuesta {
   height: 50px;
   width: 50px;
   border-radius: 50%;
+  justify-self: center;
+  transition: 1s;
 }
 
 .txt-propuesta {
   text-align: center;
+  transition: 1s;
 }
 
 .img-txt-propuesta {
   display: grid;
 }
 
-.imagen-propuesta {
-  justify-self: center;
+.img-propuesta:hover {
+  scale: 1.2;
+  box-sizing: border-box;
+  border-radius: 20%;
+  transition: 1s;
 }
 
 .flex-noticias {
@@ -156,6 +179,10 @@ footer div a img {
   vertical-align: middle;
 }
 
+.a-footer:hover {
+  text-shadow: 1px 1px 2px var(--color-cto);
+}
+
 @media screen and (min-width: 321px) {
   body {
     width: 100vw;
@@ -163,6 +190,20 @@ footer div a img {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  ul {
+    width: 768px;
+  }
+
+  h1 {
+    font-size: 2em;
+    text-shadow: 2px 2px 2px var(--color-cto);
+  }
+
   .flex-centro {
     display: flex;
     flex-wrap: nowrap;
@@ -179,3 +220,7 @@ footer div a img {
     width: 25vw;
   }
 }
+
+/*
+Agregado de clases en el a del HTML, agregado hover en CSS, modificado background position del titulo, agregado body y ul en media 768
+*/

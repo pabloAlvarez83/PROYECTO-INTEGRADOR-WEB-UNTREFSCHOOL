@@ -14,10 +14,10 @@
     <header>
       <nav id="nav">
         <ul>
-          <li><a href="#quienes-somos">Quienes somos</a></li>
-          <li><a href="#elegirnos">¿Por qué elegirnos?</a></li>
-          <li><a href="#propuesta">Propuesta educativa</a></li>
-          <li><a href="#noticias">Últimas noticias</a></li>
+          <li><a href="#quienes-somos" class="a-nav">Quienes somos</a></li>
+          <li><a href="#elegirnos" class="a-nav">¿Por qué elegirnos?</a></li>
+          <li><a href="#propuesta" class="a-nav">Propuesta educativa</a></li>
+          <li><a href="#noticias" class="a-nav">Últimas noticias</a></li>
         </ul>
       </nav>
       <div class="titulo">
@@ -29,7 +29,7 @@
     <main>
       <section id="quienes-somos">
         <h2>Quienes somos</h2>
-        <div class="flex-izq">
+        <div>
           <img
             src="img/quienes-somos.jpg"
             alt="Quienes somos"
@@ -43,9 +43,10 @@
           </p>
         </div>
       </section>
+
       <section id="elegirnos">
         <h2>¿Por qué elegirnos?</h2>
-        <div class="flex-der">
+        <div>
           <img src="img/elegirnos.jpg" alt="Porque elegirnos" class="img-der" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
@@ -55,6 +56,7 @@
           </p>
         </div>
       </section>
+
       <section id="propuesta">
         <h2>Propuesta educativa</h2>
         <div class="flex-centro">
@@ -62,7 +64,7 @@
             <img
               src="img/planificacion-actividades.jpg"
               alt="Planificacion de actividades"
-              class="imagen-propuesta"
+              class="img-propuesta"
             />
             <p class="txt-propuesta">Planificación de actividades</p>
           </div>
@@ -71,17 +73,13 @@
             <img
               src="img/objetivos.jpg"
               alt="Objetivos y metas"
-              class="imagen-propuesta"
+              class="img-propuesta"
             />
             <p class="txt-propuesta">Objetivos y metas</p>
           </div>
 
           <div class="img-txt-propuesta">
-            <img
-              src="img/recursos.jpg"
-              alt="Recursos"
-              class="imagen-propuesta"
-            />
+            <img src="img/recursos.jpg" alt="Recursos" class="img-propuesta" />
             <p class="txt-propuesta">Recursos</p>
           </div>
 
@@ -89,12 +87,17 @@
             <img
               src="img/evaluacion.jpg"
               alt="Evaluacion"
-              class="imagen-propuesta"
+              class="img-propuesta"
             />
             <p class="txt-propuesta">Evaluacion</p>
           </div>
         </div>
       </section>
+      <div>
+        <a href="#nav" class="subir"
+          >Subir <img src="ico/arrow-up.png" alt="Flecha"
+        /></a>
+      </div>
 
       <section id="noticias">
         <h2>Últimas noticias</h2>
@@ -115,21 +118,26 @@
             </p>
           </div>
         </div>
+        <div>
+          <a href="#nav" class="subir"
+            >Subir <img src="ico/arrow-up.png" alt="Flecha"
+          /></a>
+        </div>
       </section>
     </main>
 
     <!-- footer -->
     <footer>
       <div class="redes">
-        <a href="#">
+        <a href="#" class="a-footer">
           <img src="ico/facebook.png" alt="Facebook" class="icono" />
           Facebook</a
         >
-        <a href="#">
+        <a href="#" class="a-footer">
           <img src="ico/twitter.png" alt="Twitter" class="icono" />
           Twitter</a
         >
-        <a href="#">
+        <a href="#" class="a-footer">
           <img src="ico/instagram.png" alt="Instagram" class="icono" />
           Instagram</a
         >
@@ -146,11 +154,11 @@
         ></iframe>
       </div>
       <div class="contacto">
-        <a href="#">
+        <a href="#" class="a-footer">
           <img src="ico/whatsapp.png" alt="WhatsApp" class="icono" />
           11-1234-5678</a
         >
-        <a href="#">
+        <a href="#" class="a-footer">
           <img src="ico/mail.png" alt="Mail" class="icono" />
           edu@edu.com.ar</a
         >
