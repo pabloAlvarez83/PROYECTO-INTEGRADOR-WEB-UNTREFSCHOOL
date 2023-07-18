@@ -1,9 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
 :root {
   --color-pro: #fc7300;
   --color-sdo: #1f8a70;
   --color-tro: #00425a;
   --color-cto: #181823;
   --color-qto: #eff5f5;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Belanosima", sans-serif;
+  font-weight: 400;
 }
 a {
   text-decoration: none;
@@ -16,6 +33,7 @@ ul {
   margin: 0;
   padding-inline-start: 0;
 }
+
 /*Mobile first*/
 
 body {
@@ -62,7 +80,7 @@ h1 {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  color: var(--color-qto);
+  color: var(--color-tro);
   text-shadow: 1px 1px 2px var(--color-cto);
   margin: 0;
   font-size: 1em;
@@ -84,7 +102,6 @@ section {
 h2,
 h3 {
   color: var(--color-pro);
-  text-shadow: 1px 1px var(--color-cto);
   padding: 0 0.5em;
 }
 
@@ -150,7 +167,13 @@ footer {
   background-color: var(--color-sdo);
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
+}
+
+.footer-form {
+  position: absolute;
+  bottom: 0;
+  width: inherit;
 }
 
 footer div a {
@@ -171,7 +194,12 @@ footer div a img {
 .redes,
 .contacto,
 .mapa {
-  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+h4 {
+  text-align: center;
+  color: var(--color-qto);
 }
 
 .icono {
@@ -183,9 +211,76 @@ footer div a img {
   text-shadow: 1px 1px 2px var(--color-cto);
 }
 
-@media screen and (min-width: 321px) {
+/*Formulario*/
+
+form {
+  margin-top: 1em;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+
+label {
+  margin-top: 0.5em;
+}
+
+button {
+  background-color: var(--color-tro);
+  color: var(--color-qto);
+  width: 20vw;
+  margin: 1em 0;
+  align-self: end;
+}
+
+::placeholder {
+  color: var(--color-qto);
+}
+
+input:required {
+  background-color: var(--color-sdo);
+  transition: 1s;
+  color: var(--color-qto);
+}
+
+input:required:hover {
+  transition: 1s;
+}
+
+input:required:invalid {
+  background-color: var(--color-pro);
+}
+
+textarea:required {
+  background-color: var(--color-sdo);
+  transition: 1s;
+  color: var(--color-qto);
+}
+
+textarea:required:hover {
+  transition: 1s;
+}
+textarea:required:invalid {
+  background-color: var(--color-pro);
+}
+
+.btn {
+  float: right;
+}
+
+@media screen and (min-width: 320px) {
   body {
     width: 100vw;
+  }
+
+  html {
+    font-size: smaller;
+  }
+
+  .form-label,
+  .form-control,
+  .btn {
+    font-size: smaller;
   }
 }
 
@@ -195,13 +290,21 @@ footer div a img {
     margin: 0 auto;
   }
 
+  html {
+    font-size: medium;
+  }
+
   ul {
     width: 768px;
   }
 
   h1 {
     font-size: 2em;
-    text-shadow: 2px 2px 2px var(--color-cto);
+    text-shadow: 1px 1px 1px var(--color-sdo);
+  }
+
+  .subir-none {
+    display: none;
   }
 
   .flex-centro {
@@ -217,6 +320,17 @@ footer div a img {
   }
 
   li {
-    width: 25vw;
+    font-size: smaller;
+  }
+
+  h4 {
+    font-size: larger;
+  }
+
+  footer div a {
+    font-size: medium;
   }
 }
+
+/*Agregar fuentes belanosima para titulos y poppins para texto*/
+/*El formulario es en una pagina aparte, que se tenga acceso desde la inicial*/
