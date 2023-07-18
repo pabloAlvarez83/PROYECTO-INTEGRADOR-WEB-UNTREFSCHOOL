@@ -332,3 +332,17 @@ textarea:required:invalid {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  body {
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+  ul {
+    width: 1024px;
+  }
+
+  form {
+    margin: 0 5em;
+  }
+}
