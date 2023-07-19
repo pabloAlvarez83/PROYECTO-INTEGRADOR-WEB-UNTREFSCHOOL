@@ -303,6 +303,10 @@ textarea:required:invalid {
     text-shadow: 1px 1px 1px var(--color-sdo);
   }
 
+  .img-izq,
+  .img-der {
+    height: 150px;
+  }
   .subir-none {
     display: none;
   }
@@ -321,6 +325,11 @@ textarea:required:invalid {
 
   li {
     font-size: smaller;
+  }
+
+  .img-propuesta {
+    height: 80px;
+    width: 80px;
   }
 
   h4 {
