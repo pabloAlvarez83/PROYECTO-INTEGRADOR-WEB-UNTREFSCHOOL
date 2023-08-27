@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
   --color-pro: #fc7300;
@@ -12,14 +12,14 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Belanosima", sans-serif;
+  font-family: 'Belanosima', sans-serif;
   font-weight: 400;
 }
 a {
@@ -157,23 +157,13 @@ p {
   display: flex;
 }
 
-.noticia {
-  width: 50%;
-}
-
 /* footer */
 
 footer {
-  background-color: var(--color-sdo);
+  background-color: var(--color-tro);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-.footer-form {
-  position: absolute;
-  bottom: 0;
-  width: inherit;
 }
 
 footer div a {
@@ -215,7 +205,7 @@ h4 {
 
 form {
   margin-top: 1em;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
   margin: 1em;
@@ -277,6 +267,20 @@ textarea:required:invalid {
     font-size: smaller;
   }
 
+  .flex-noticias {
+    flex-direction: column;
+  }
+
+  .noticia {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   .form-label,
   .form-control,
   .btn {
@@ -336,8 +340,41 @@ textarea:required:invalid {
     font-size: larger;
   }
 
+  .noticia {
+    width: 50%;
+  }
+
+  .flex-noticias {
+    flex-direction: row;
+  }
+
+  .curved {
+    position: relative;
+    background: var(--color-qto);
+    height: 20vh;
+  }
+
+  .curved::after {
+    content: '';
+    border-top-left-radius: 50% 200%;
+    border-top-right-radius: 50% 200%;
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    background: var(--color-tro);
+    height: 30%;
+  }
+
+  footer {
+    flex-direction: row;
+  }
   footer div a {
     font-size: medium;
+  }
+
+  iframe {
+    width: 200px;
+    height: 150px;
   }
 }
 
